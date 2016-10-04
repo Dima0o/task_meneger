@@ -1,0 +1,71 @@
+15:12:15.598997 --- SIGSTOP (Stopped (signal)) @ 0 (0) ---
+15:12:15.599058 --- SIGSTOP (Stopped (signal)) @ 0 (0) ---
+15:12:15.599103 stat("../config.php", {st_mode=S_IFREG|0600, st_size=605, ...}) = 0
+15:12:15.599186 getcwd("/home/p/ponysijy/test.ponysijy.bget.ru/public_html/scr", 4096) = 55
+15:12:15.599228 lstat("/home/p/ponysijy/test.ponysijy.bget.ru/public_html/scr/../config.php", {st_mode=S_IFREG|0600, st_size=605, ...}) = 0
+15:12:15.599467 fcntl(133, F_SETLKW, {type=F_WRLCK, whence=SEEK_SET, start=0, len=1}) = 0
+15:12:15.599524 fcntl(133, F_SETLKW, {type=F_UNLCK, whence=SEEK_SET, start=0, len=1}) = 0
+15:12:15.600002 socket(PF_FILE, SOCK_STREAM, 0) = 173
+15:12:15.600238 fcntl(173, F_GETFL)     = 0x2 (flags O_RDWR)
+15:12:15.600421 fcntl(173, F_SETFL, O_RDWR|O_NONBLOCK) = 0
+15:12:15.600451 connect(173, {sa_family=AF_FILE, path="/var/run/mysqld/mysqld.sock"}, 29) = 0
+15:12:15.600528 fcntl(173, F_SETFL, O_RDWR) = 0
+15:12:15.600570 poll([{fd=173, events=POLLIN|POLLERR|POLLHUP}], 1, 1471228928) = 1 ([{fd=173, revents=POLLIN}])
+15:12:15.600665 recvfrom(173, "V\0\0\0", 4, MSG_DONTWAIT, NULL, NULL) = 4
+15:12:15.600714 poll([{fd=173, events=POLLIN|POLLERR|POLLHUP}], 1, 1471228928) = 1 ([{fd=173, revents=POLLIN}])
+15:12:15.600746 recvfrom(173, "\n5.7.12-5-beget-log\0\317o\320\0]\16?XE\1778\10\0\377\377!\2\0\377\301\25\0\0\0\0\0\0\0\0\0\0o\6yU\25\vzfs\t\5c\0mysql_native_password\0", 90, MSG_DONTWAIT, NULL, NULL) = 86
+15:12:15.600814 sendto(173, "Z\0\0\1\215\242\16\0\0\0\0\300!\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0ponysijy_test\0\24\3Yn\16\321Qx\254!6?\330&7\267>\244o\226\251\0mysql_native_password\0", 94, MSG_DONTWAIT, NULL, 0) = 94
+15:12:15.600858 poll([{fd=173, events=POLLIN|POLLERR|POLLHUP}], 1, 1471228928) = 1 ([{fd=173, revents=POLLIN}])
+15:12:15.601001 recvfrom(173, "\7\0\0\2", 4, MSG_DONTWAIT, NULL, NULL) = 4
+15:12:15.601031 poll([{fd=173, events=POLLIN|POLLERR|POLLHUP}], 1, 1471228928) = 1 ([{fd=173, revents=POLLIN}])
+15:12:15.601060 recvfrom(173, "\0\0\0\2\0\0\0", 90, MSG_DONTWAIT, NULL, NULL) = 7
+15:12:15.601117 sendto(173, "\3\0\0\0\33\1\0", 7, MSG_DONTWAIT, NULL, 0) = 7
+15:12:15.601149 poll([{fd=173, events=POLLIN|POLLERR|POLLHUP}], 1, 1471228928) = 1 ([{fd=173, revents=POLLIN}])
+15:12:15.601178 recvfrom(173, "\5\0\0\1\376\0\0\2\0", 83, MSG_DONTWAIT, NULL, NULL) = 9
+15:12:15.601211 sendto(173, " \0\0\0\3set character_set_client='utf8'", 36, MSG_DONTWAIT, NULL, 0) = 36
+15:12:15.601277 poll([{fd=173, events=POLLIN|POLLERR|POLLHUP}], 1, 1471228928) = 1 ([{fd=173, revents=POLLIN}])
+15:12:15.601326 recvfrom(173, "\7\0\0\1\0\0\0\2\0\0\0", 74, MSG_DONTWAIT, NULL, NULL) = 11
+15:12:15.601361 sendto(173, "!\0\0\0\3set character_set_results='utf8'", 37, MSG_DONTWAIT, NULL, 0) = 37
+15:12:15.601394 poll([{fd=173, events=POLLIN|POLLERR|POLLHUP}], 1, 1471228928) = 1 ([{fd=173, revents=POLLIN}])
+15:12:15.601423 recvfrom(173, "\7\0\0\1\0\0\0\2\0\0\0", 63, MSG_DONTWAIT, NULL, NULL) = 11
+15:12:15.601456 sendto(173, "$\0\0\0\3set collation_connection='utf8_bin'", 40, MSG_DONTWAIT, NULL, 0) = 40
+15:12:15.601489 poll([{fd=173, events=POLLIN|POLLERR|POLLHUP}], 1, 1471228928) = 1 ([{fd=173, revents=POLLIN}])
+15:12:15.601518 recvfrom(173, "\7\0\0\1\0\0\0\2\0\0\0", 52, MSG_DONTWAIT, NULL, NULL) = 11
+15:12:15.601573 open("/home/p/ponysijy/test.ponysijy.bget.ru/public_html/tmp/sess_23c00e0d6386e0dc7cad72e6919b6911", O_RDWR|O_CREAT|O_NOFOLLOW, 0600) = 174
+15:12:15.601620 fstat(174, {st_mode=S_IFREG|0600, st_size=27, ...}) = 0
+15:12:15.601657 getuid()                = 266002
+15:12:15.601681 geteuid()               = 266002
+15:12:15.601705 geteuid()               = 266002
+15:12:15.601730 flock(174, LOCK_EX)     = 0
+15:12:15.601760 fcntl(174, F_SETFD, FD_CLOEXEC) = 0
+15:12:15.601784 fstat(174, {st_mode=S_IFREG|0600, st_size=27, ...}) = 0
+15:12:15.601820 pread(174, "auth|s:1:\"1\";prava|s:1:\"1\";", 27, 0) = 27
+15:12:15.601958 sendto(173, "\231\0\0\0\3INSERT INTO `ponysijy_test`.`new_message` (`id`, `conf`, `date`, `from`, `message`, `flag`) VALUES (NULL, '1', '2016-08-09 15:12:15', '1', 'test', '1');", 157, MSG_DONTWAIT, NULL, 0) = 157
+15:12:15.602002 poll([{fd=173, events=POLLIN|POLLERR|POLLHUP}], 1, 1471228928) = 1 ([{fd=173, revents=POLLIN}])
+15:12:15.602235 recvfrom(173, "\7\0\0\1\0\1;\2\0\0\0", 41, MSG_DONTWAIT, NULL, NULL) = 11
+15:12:15.602273 chdir("/")              = 0
+15:12:15.602314 setitimer(ITIMER_PROF, {it_interval={0, 0}, it_value={0, 0}}, NULL) = 0
+15:12:15.602549 pwrite(174, "auth|s:1:\"1\";prava|s:1:\"1\";", 27, 0) = 27
+15:12:15.602597 close(174)              = 0
+15:12:15.602650 getrusage(RUSAGE_SELF, {ru_utime={0, 13333}, ru_stime={0, 0}, ...}) = 0
+15:12:15.602715 socket(PF_FILE, SOCK_DGRAM|SOCK_CLOEXEC, 0) = 174
+15:12:15.602748 connect(174, {sa_family=AF_FILE, path="/dev/log"}, 110) = 0
+15:12:15.602796 sendto(174, "<8>Aug  9 15:12:15 php: begethook ponysijy__testzponysijyzbget__bs test.ponysijy.bget.ru [BEGETHOOK_RUSAGE] uri /scr/add_new_message.php?id_conf=1 utime 13333 stime 0 /home/p/ponysijy/test.ponysijy.bget.ru/public_html/scr/add_new_message.php ++0  ", 247, MSG_NOSIGNAL, NULL, 0) = 247
+15:12:15.602843 close(174)              = 0
+15:12:15.602912 rt_sigaction(SIGPIPE, {SIG_IGN, [PIPE], SA_RESTORER|SA_RESTART, 0x2af33b7fa150}, {SIG_IGN, [], SA_RESTORER, 0x2af33b5b6cb0}, 8) = 0
+15:12:15.603401 sendto(173, "\1\0\0\0\1", 5, MSG_DONTWAIT, NULL, 0) = 5
+15:12:15.603449 close(173)              = 0
+15:12:15.603484 rt_sigaction(SIGPIPE, {SIG_IGN, [PIPE], SA_RESTORER|SA_RESTART, 0x2af33b7fa150}, {SIG_IGN, [PIPE], SA_RESTORER|SA_RESTART, 0x2af33b7fa150}, 8) = 0
+15:12:15.603544 fcntl(112, F_SETLKW, {type=F_WRLCK, whence=SEEK_SET, start=0, len=1}) = 0
+15:12:15.603578 fcntl(112, F_SETLKW, {type=F_UNLCK, whence=SEEK_SET, start=0, len=1}) = 0
+15:12:15.603610 fcntl(133, F_SETLKW, {type=F_WRLCK, whence=SEEK_SET, start=0, len=1}) = 0
+15:12:15.603642 fcntl(133, F_SETLKW, {type=F_UNLCK, whence=SEEK_SET, start=0, len=1}) = 0
+15:12:15.604950 setitimer(ITIMER_PROF, {it_interval={0, 0}, it_value={0, 0}}, NULL) = 0
+15:12:15.605025 read(172, 0x565387452a78, 8000) = -1 EAGAIN (Resource temporarily unavailable)
+15:12:15.605067 writev(172, [{"HTTP/1.1 200 OK\r\nDate: Tue, 09 Aug 2016 12:12:14 GMT\r\nServer: Apache/2.4.10 (Unix)\r\nX-Powered-By: PHP/5.4.45\r\nExpires: Thu, 19 Nov 1981 08:52:00 GMT\r\nCache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0\r\nPragma: no-cache\r\nContent-Length: 0\r\nContent-Type: text/html\r\n\r\n", 293}], 1) = 293
+15:12:15.605191 write(7, "{ \"@timestamp\": \"2016-08-09T15:12:14+0300\", \"@fields\": { \"vhost\": \"test.ponysijy.bget.ru\", \"ip\": \"5.101.159.150\", \"method\": \"POST\", \"url\": \"/scr/add_new_message.php\", \"user\": \"-\", \"status\": \"200\", \"user_agent\": \"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0\", \"referer\": \"http://test.ponysijy.bget.ru/index.php?act=message&conf=1\", \"bytes_sent\": \"-\" },  \"@message\": \"test.ponysijy.bget.ru 5.101.159.150 - - [09/Aug/2016:15:12:14 +0300] \\\"POST /scr/add_new_message.php?id_conf=1 HTTP/1.1\\\" 200 - \\\"http://test.ponysijy.bget.ru/index.php?act=message&conf=1\\\" \\\"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0\\\"\" }\n", 672) = 672
+15:12:15.605680 write(8, "test.ponysijy.bget.ru 5.101.159.150 - - [09/Aug/2016:15:12:14 +0300] \"POST /scr/add_new_message.php?id_conf=1 HTTP/1.1\" 200 - \"http://test.ponysijy.bget.ru/index.php?act=message&conf=1\" \"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0\"\n", 265) = 265
+15:12:15.605951 times({tms_utime=1, tms_stime=0, tms_cutime=0, tms_cstime=0}) = 1949124336
+15:12:15.605986 close(3)                = 0
+15:12:15.606035 poll([{fd=172, events=POLLIN}], 1, 1000) = 0 (Timeout)
+15:12:16.616965 exit_group(0)           = ?
